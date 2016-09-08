@@ -1,0 +1,18 @@
+<header>
+  <h1>ねこったー</h1>
+</header>
+<div class="contents">
+  <% @tweets.each do |tweet| %>
+    <div class="message clearfix">
+      <%= image_tag 'cat1.png' %>
+      <div class="message_box">
+        <p class="user_name">
+          野良猫1号
+        </p>
+        <p class="text">
+          <%= tweet.text %>
+        </p>
+      </div>
+    </div>
+  <% end %>
+</div>
