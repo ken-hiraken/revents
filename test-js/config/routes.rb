@@ -1,5 +1,3 @@
 Rails.application.routes.draw do
-
-  get 'events' => 'events#index'
-
+  root 'top#index'
 end
